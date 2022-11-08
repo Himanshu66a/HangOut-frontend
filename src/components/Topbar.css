@@ -1,0 +1,263 @@
+.topbarContainer {
+  min-height: 50px;
+  width: 100%;
+  background-color: #271639;
+  display: flex;
+  align-items: center;
+  position: sticky;
+  /* position: relative; */
+  top: 0;
+  z-index: 999;
+}
+
+.ham {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  margin-left: 5%;
+  display: none;
+}
+.hamicon{
+  color: white;
+}
+
+.toplogo {
+  height: 50px;
+  width: 50px;
+  margin-left: 200px;
+}
+
+.toplogo img {
+  height: 90%;
+  width: 90%;
+  border-radius: 50%;
+}
+
+.topbarLeft {
+  flex: 3;
+  margin-left: 3%;
+}
+
+.logo {
+  font-size: 24px;
+  margin-left: 200px;
+  font-weight: bold;
+  color: white;
+  cursor: pointer;
+}
+
+.logo-container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.logo-container span {
+  color: white;
+  cursor: pointer;
+}
+
+.logo-img {
+  cursor: pointer;
+  height: 40px;
+  width: 40px;
+
+}
+
+.logo-img img {
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+}
+
+
+
+.topbarCenter {
+  color: white;
+  flex: 5;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.topbarCenter div {
+  color: white;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.hidden-msg {
+  color: white;
+
+  flex: 2;
+  display: none;
+    margin-left: 2%;
+
+}
+.hidden-msg div{
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+
+.topbarRight {
+  flex: 4;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  color: white
+}
+
+
+.topbarLink {
+  margin-right: 10px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.topbarIcons {
+  display: flex;
+}
+
+.topbarIconItem {
+  margin-right: 15px;
+  cursor: pointer;
+  position: relative;
+}
+
+
+
+.topbarimgcontainer {
+  height: 100%;
+  width: 100%;
+  margin-left: 80%;
+}
+
+.topbarImg {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  object-fit: cover;
+  cursor: pointer;
+  margin-right: 5%;
+}
+
+
+/* Hmaburger menu */
+@keyframes slidein {
+  0% {
+    transform: translateX(-100px);
+  }
+
+  100% {
+    transform: translateX(0px);
+  }
+}
+
+.top-sidebar {
+  background-color: #f1f1f1;
+  flex: 3;
+  height: calc(100vh - 50px);
+  overflow-y: scroll;
+  position: relative;
+  position: absolute;
+  top: 0px;
+  padding-top: 40px;
+  animation-name: slidein;
+  animation-duration: 0.5s;
+  animation-timing-function: ease-in-out;
+  display: none;
+
+}
+
+
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgb(179, 179, 179);
+}
+
+.top-sidebarWrapper {
+  padding: 20px;
+}
+
+.top-sidebarList {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.top-sidebarListItem {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.top-sidebarIcon {
+  margin-right: 15px;
+}
+
+.top-sidebarButton {
+  width: 150px;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  font-weight: 500;
+}
+
+.top-sidebarHr {
+  margin: 20px 0;
+}
+
+.top-sidebarFriendList {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.top-recommend {
+  display: flex;
+  align-items: center;
+
+  font-size: 20px;
+}
+
+.show {
+  display: block;
+}
+
+.close {
+  position: absolute;
+  top: 10px;
+  left: 85%;
+  font-size: 30px !important;
+}
+
+@media screen and (max-width:850px) {
+  .ham {
+    display: block;
+  }
+
+  .topbarCenter {
+    display: none;
+  }
+  .hidden-msg{
+        display: block;
+  }
+  .topbarRight {
+    flex: 2;
+    margin-right: 2%;
+
+  }
+
+}

@@ -1,0 +1,10 @@
+.loginBox1{
+  min-height: 250px;
+  padding: 20px;
+  background-color: #d9deff;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}

@@ -1,0 +1,217 @@
+
+
+.login {
+    width: 100vw;
+    height: 100vh;
+
+
+    background-color: rgb(20,69,91);
+background: linear-gradient(180deg, rgba(20,69,91,1) 13%, rgba(25,9,97,1) 96%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .register{
+    width: 100vw;
+    height: 100vh;
+
+
+    background-color: rgb(20,69,91);
+background: linear-gradient(180deg, rgba(20,69,91,1) 13%, rgba(25,9,97,1) 96%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+  }
+
+  
+  .loginWrapper {
+    width: 80%;
+    height: 90%;
+    display: flex;
+    gap: 10px;
+  }
+  
+  .loginLeft,
+  .loginRight {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+
+  .loginlogoimg{
+    height: 100px;
+    width: 100px;
+  }
+  .loginlogoimg img{
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+  }
+
+  .loginRight {
+    width: 50%;
+  }
+  .loginLogo {
+    font-size: 50px;
+    font-weight: 800;
+    /* color: #1775ee; */
+    color: #f3ecff;
+    margin-bottom: 10px;
+  }
+  
+  .loginDesc {
+    font-size: 24px;
+  }
+  
+.loginDesc {
+  color: #d8d8d8;
+}
+  
+  .loginBox{
+      min-height: 500px;
+      padding: 20px;
+      background-color: #d9deff;
+      border-radius: 10px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+  }
+  
+  .loginInput{
+      height: 35px;
+      width: 90%;
+      border-radius: 10px;
+      border: 1px solid gray;
+      font-size: 18px;
+      padding-left: 20px;
+  }
+  
+  .loginInput:focus{
+      outline: none;
+  }
+  
+  .loginButton{
+      height: 40px;
+      width: 50%;
+      border-radius: 10px;
+      border: none;
+      background-color: #3d5dc2;
+      color: white;
+      font-size: 17px;
+      font-weight: 500;
+      cursor: pointer;
+  }
+  
+  .loginForgot{
+      text-align: center;
+      color: #1775ee;
+  }
+
+  .or{
+    font-weight: bolder;
+  }
+  
+  .loginRegisterButton{
+    height: 40px;
+    width: 50%;
+      align-self: center;
+      border-radius: 10px;
+      border: none;
+      background-color: #42b72a;
+      color: white;
+      font-size: 17px;
+      font-weight: 500;
+      cursor: pointer;
+  }
+  .registerleft{
+    align-items: flex-start;
+  }
+
+  .PreviewContainer{
+    display: flex;
+    height: 100px;
+    width: 100px;
+    /* border-radius: 50%; */
+  }
+  .PreviewImg{
+    background-position: center;
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+  }
+
+  .CancelImg{
+    z-index: 33333333333333;
+  }
+  .CancelImg:hover{
+    cursor: pointer;
+  }
+
+  .space{
+    background-color: transparent;
+    width: 60px;
+  }
+  .Rlogo{
+    height: 100px;
+    width: 100px;
+  }
+  .Rlogo img{
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+  }
+
+  .loginlogo{
+
+  }
+
+  @media screen and (max-width:850px) {
+    .loginLeft{
+      width: 40%;
+    }
+  
+    .loginRight {
+      width: 60%;
+    }
+    .loginLogo {
+      font-size: 40px;}
+      .loginDesc {
+        font-size: 17px;
+    }
+
+  }
+
+  @media screen and (max-width:768px) {
+    .loginWrapper{
+      /* display: none; */
+      flex-direction: column;
+      align-items: center;
+      gap:20px
+    }
+    .register{
+      height: 100%;
+      padding-top: 2%;
+      padding-bottom: 5%;
+    }
+    .loginRight {
+      width: 85%;
+  }
+  .loginDesc{
+    display: none;
+  }
+  .PreviewContainer{
+    height: 50px;
+    width: 50px;
+  }
+ 
+  
+    .loginLeft{
+      align-items: center;
+    }
+    .loginRegisterButton {width: 80%;}
+
+  }

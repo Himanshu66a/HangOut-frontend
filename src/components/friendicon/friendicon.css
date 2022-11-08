@@ -1,0 +1,17 @@
+.single-friend{
+    height: 90px;
+    width: 90px;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    border: none;
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+.single-friend img {
+    height: 70%;
+    width: 70%;
+    border-radius: 50%;
+}
+.single-friend{
+    margin-left: 5px;
+}

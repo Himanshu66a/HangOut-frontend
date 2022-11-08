@@ -1,0 +1,27 @@
+.feed{
+    flex:5.5
+}
+
+.feedWrapper{
+    padding: 20px;
+    
+}
+
+.no-posts{
+    text-align: center;
+    font-size: 30px;
+    margin-top: 20%;
+    color: #c0c0c0;
+}
+.no-posts p{
+    text-align: center;
+    font-size: 20px;
+    margin-top: 5%;
+    color: #c0c0c0;
+}
+
+@media screen and (max-width:850px) {
+    .feed{
+        width: 100%;
+    }
+  }
