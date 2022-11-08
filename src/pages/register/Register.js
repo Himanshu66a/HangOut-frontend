@@ -43,7 +43,7 @@ export default function Register() {
         } catch (err) { }
       }
       try {
-        await axios.post(`${api}/auth/register`, user);
+        await axios.post(`${api}auth/register`, user);
         navigate('/login')
       } catch (err) { }
     }
