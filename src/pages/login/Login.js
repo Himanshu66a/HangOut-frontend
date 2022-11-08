@@ -7,6 +7,7 @@ import { useNavigate } from 'react-router-dom'
 import axios from 'axios'
 
 const PF = process.env.REACT_APP_PUBLIC_FOLDER;
+const AU = process.env.REACT_APP_URI;
 
 // import { CircularProgress } from '@mui/material' ;
 
@@ -26,7 +27,7 @@ export default function Login() {
       { email: email.current.value, password: password.current.value },
       dispatch
     );
-    await axios.get(`/auth/login/${email.current.value}/${password.current.value}`)
+    await axios.get(`${AU}/auth/login/${email.current.value}/${password.current.value}`)
     .catch((error) => {
       if (error.response) {
         if (error.response.status == 404) {
