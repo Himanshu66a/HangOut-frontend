@@ -42,7 +42,7 @@ export default function Register() {
         } catch (err) { }
       }
       try {
-        await axios.post("/auth/register", user);
+        await axios.post("https://hangout-api.onrender.com/api/auth/register", user);
         navigate('/login')
       } catch (err) { }
     }
