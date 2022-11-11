@@ -5,7 +5,7 @@ import { useNavigate } from "react-router-dom";
 import "../../components/share/share.css";
 import { PermMedia, Label, Room, EmojiEmotions, Cancel } from "@mui/icons-material";
 const PF = process.env.REACT_APP_PUBLIC_FOLDER;
-const api = process.env.REACT_APP_URI;
+const AU = process.env.REACT_APP_URI;
 
 export default function Register() {
 
@@ -43,7 +43,7 @@ export default function Register() {
         } catch (err) { }
       }
       try {
-        await axios.post(`${api}api/auth/register`, user);
+        await axios.post(`${AU}api/auth/register`, user);
         navigate('/login')
       } catch (err) { }
     }
