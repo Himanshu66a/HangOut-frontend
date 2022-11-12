@@ -1,4 +1,5 @@
 import axios from "axios";
+const AU = process.env.REACT_APP_URI;
 
 export const loginCall = async (userCredential, dispatch) => {
   console.log(userCredential.email);
@@ -12,7 +13,7 @@ export const loginCall = async (userCredential, dispatch) => {
     dispatch({ type: "LOGIN_FAILURE", payload: err });
   }
 
-  // await axios.get(`/auth/login/${userCredential.email}/${userCredential.password}`)
+  // await axios.get(`${AU}api/auth/login/${userCredential.email}/${userCredential.password}`)
   //   .catch((error) => {
   //     if (error.response) {
   //       if (error.response.status == 404) {
