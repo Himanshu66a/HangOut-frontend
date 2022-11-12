@@ -27,7 +27,9 @@ export default function Login() {
       { email: email.current.value, password: password.current.value },
       dispatch
     );
-    await axios.get(`${AU}api/auth/login/${email.current.value}/${password.current.value}`)
+    await axios.get(`${AU}api/auth/login/${email.current.value}/${password.current.value}`).then(res => {
+      localStorage.setItem("user", JSON.stringify(res))
+    })
     .catch((error) => {
       if (error.response) {
         if (error.response.status == 404) {
