@@ -104,6 +104,18 @@ background: linear-gradient(180deg, rgba(20,69,91,1) 13%, rgba(25,9,97,1) 96%);
       font-weight: 500;
       cursor: pointer;
   }
+
+  .loadingbtn{
+    height: 40px;
+      width: 50%;
+      border-radius: 10px;
+      border: none;
+      background-color: #688bff;
+      color: white;
+      font-size: 17px;
+      font-weight: 500;
+      cursor: not-allowed;
+  }
   
   .loginForgot{
       text-align: center;
