@@ -88,13 +88,14 @@ export default function Login() {
             {
               wrongPass && <div style={{'color':'red'}}>{wrongPass}</div>
             }
-            <button className="loginButton" type="submit" disabled={isFetching}>
-              {/* {isFetching ? (
-                <CircularProgress color="white" size="20px" />
+           <button  className={!isFetching?"loginButton":"loadingbtn"}  type="submit" disabled={isFetching}>
+              {isFetching ? (
+                // <CircularProgress color="white" size="20px" />
+                "Loading.."
               ) : (
                 "Log In"
-              )} */}
-              Log In
+              )}
+             
             </button>
             <div className="or" >
               OR
