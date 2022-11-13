@@ -28,7 +28,7 @@ import { io } from "socket.io-client";
 
 
   useEffect(() => {
-    socket.current = io("ws://localhost:8900");
+    socket.current = io("https://hangout-socket-production.up.railway.app/");
     socket.current.on("getMessage", (data) => {
       setArrivalMessage({
         sender: data.senderId,
